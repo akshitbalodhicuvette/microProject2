@@ -1,0 +1,252 @@
+/* Doubt 1 :
+When I make my navbar fixed the elements appear in front of navbar when scrolling upwards
+For fixig this i made the zindex of navbar high. So my question is am i right in doing this, like is this the industry standard solution */
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 20px;
+    max-width: 100%;
+}
+
+#navBar{
+    /* margin-bottom: 500px; */
+    z-index: 1;
+    width: 100%;
+    /* top: px; */
+    /* left: 0px; */
+    position: fixed;
+    padding: 25px 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color:#6F6AF7;
+    color: white;
+    font-size: 30px;
+    box-sizing: border-box;
+}
+
+#logo a{
+    color: white;
+    text-decoration: none;
+    font-size: 40px;
+    font-family: 'Delius Unicase', cursive;;
+}
+
+.horizontalMenu{
+    list-style: none;
+}
+
+.menuitem{
+    display: inline-block;
+    margin: 0px 15px ;
+}
+
+.menuitem a{
+    color: white;
+    text-decoration: none;
+}
+
+#topsearch button i{
+    font-size: 20px;
+    background-color: transparent;
+    color: #9F9F9F;
+}
+
+#topsearch button{
+    margin-left: -50px;
+    background-color: transparent;
+    border: none;
+}
+
+#searchButton{
+    width: 200px;
+    color:#9F9F9F;
+    font-size: 22px;
+    border-radius: 20px;
+    padding: 5px 15px;
+}
+
+#collapse i{
+    font-size: 40px;
+}
+
+
+#socialMediatray{
+    position: absolute;
+    top: 250px;
+    right: 0px;
+    height: 1080px;
+}
+
+#socialtray{
+    position: sticky;
+    top: 100px;
+}
+
+.smicon{
+    padding: 1px;
+    border: 2px solid black;
+    margin-top: 2px;
+}
+
+.smicon img{
+    height: 50px;
+    width: 50px;
+}
+
+#hero{
+    margin-top: 100px;
+}
+
+#main{
+    margin-top: 150px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+}
+
+#main img{
+    filter: drop-shadow(4px 10px 10px rgb(112, 112, 112));
+}
+
+#mainbg{
+    margin-left: 50px;
+    background-color: #E5D8FF;
+    color: #6F7373;
+    padding: 20px 20px;
+    width: 50%;
+    border-radius: 20px;
+}
+
+#questions{
+    margin-top: 80px;
+    padding: 0px 190px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+h4{
+    padding: 0px;
+    margin: 0px;
+}
+
+.questionitem{
+    padding: 15px 50px;
+    color: white;
+    border-radius: 10px;
+    filter: drop-shadow(4px 10px 10px rgb(145, 145, 145));
+}
+
+#qitem1{
+    background-color: #929DFF;
+}
+#qitem2{
+    background-color: #734CF2;
+}
+#qitem3{
+    background-color: #D288FF;
+}
+#qitem4{
+    background-color: black;
+}
+
+#display{
+    display: flex;
+    flex-direction: row;
+    /* justify-content: space-between; */
+    border-radius: 20px;
+    margin-left: 12.5%;
+    width: 75%;
+    /* padding: 0px 30px; */
+    margin-top: 80px;
+    background-color: #483EFF;
+    margin-bottom: 80px;
+}
+
+#left{
+    margin-left: 55px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 30%;
+    font-size: 30px;
+    color: white;
+    min-height: 500px;
+}
+
+.tiles{
+    width: 70%;
+    text-align: center;
+    border-radius: 10px;
+    padding:20px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+#tile1{
+    background-color: #BCE0F6;
+    color: black;
+    filter: drop-shadow(4px 10px 10px rgb(23, 23, 23));
+}
+
+#tile2{
+    border: 3px solid white;
+}
+
+#tile3{
+    border: 3px solid white;
+}
+
+#right{
+    position: relative;
+    background-color: white;
+    width: 70%;
+    padding: 30px 60px;
+    margin: 30px;
+    border-radius: 20px;
+    font-size: 30px;
+}
+
+#right ul{
+    list-style: none;
+    font-size: 20px;
+    line-height: 50px;
+}
+
+#rbutton{
+    position: absolute;
+    bottom: 30px;
+    right: 50px;
+    background-color: black;
+    color: white;
+    font-size: 20px;
+    padding: 10px 30px;
+    font-weight: lighter;
+    border-radius: 10px;
+}
+
+#contact{
+    position: fixed;
+    bottom: 10px;
+    right: 150px;
+    background-color: white;
+    border-radius: 50%;
+    padding: 10px;
+    border: 1px solid black;
+}
